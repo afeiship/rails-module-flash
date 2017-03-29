@@ -23,6 +23,12 @@
     <% end %>
 
 
+
+    <% if flash[:xx] %>
+      <div class="my-xx"><%= flash[:xx] %></div>
+    <% end %>
+
+
     <% if flash[:alert] %>
       <div class="my-alert"><%= flash[:alert] %></div>
     <% end %>

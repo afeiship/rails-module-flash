@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   end
 
   def page2
-    flash.now[:notice] = "page2 Post successfully created"
+    flash.now[:xx] = "page2 XX successfully created"
   end
 
   def page3
