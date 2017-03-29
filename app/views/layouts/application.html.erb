@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsModuleFlash</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+
+    <% if flash[:notice] %>
+      <div class="my-notice"><%= flash[:notice] %></div>
+    <% end %>
+
+
+
+    <% if flash[:info] %>
+      <div class="my-info"><%= flash[:info] %></div>
+    <% end %>
+
+
+    <% if flash[:alert] %>
+      <div class="my-alert"><%= flash[:alert] %></div>
+    <% end %>
+  </body>
+</html>
